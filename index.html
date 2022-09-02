@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=h1, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="src/styles.css" />
     <link
@@ -15,40 +14,53 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1 class="heading">Kyiv, Ukraine</h1>
-        <ul class="description-1">
-          <li>Friday 20:16</li>
-          <li>Clear</li>
-        </ul>
-        <div class="row">
-          <div class="col-md-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="Cloudy"
-            />
-            17°C | °F
-          </div>
-          <div class="col-md-6">
-            <ul class="description-2">
-              <li>Precipitation:0</li>
-              <li>Humidity: 73%</li>
-              <li>Wind: 2km/h</li>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <h1 class="heading">Kyiv, Ukraine</h1>
+            <ul class="description-1">
+              <li>Friday 20:16</li>
+              <li>Clear</li>
             </ul>
           </div>
-        </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Cloudy"
+                />
+                <div>
+                  <strong id="temperature">17</strong
+                  ><span class="units"
+                    >°C | <a class="fahrenheit" href="#">°F</a></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <ul class="description-2">
+                <li>Precipitation:0</li>
+                <li>Humidity: 73%</li>
+                <li>Wind: 2km/h</li>
+              </ul>
+            </div>
+          </div>
 
-        <script src="src/app.js"></script>
+          <script src="src/app.js"></script>
+        </div>
+        <small>
+          <p class="open-source">
+            <a
+              class="open-source-link"
+              href="https://github.com/dary0708/vanilla-weather-app"
+            >
+              Open-source
+            </a>
+            code, by Daria Subota
+          </p>
+        </small>
       </div>
-      <small
-        ><a
-          class="open-source-link"
-          href="https://github.com/dary0708/vanilla-weather-app"
-        >
-          Open-source
-        </a>
-        code, by Daria Subota</small
-      >
     </div>
   </body>
 </html>
