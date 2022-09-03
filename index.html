@@ -11,16 +11,17 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1 class="heading">Kyiv, Ukraine</h1>
+            <h1 class="heading" id="city"></h1>
             <ul class="description-1">
               <li>Friday 20:16</li>
-              <li>Clear</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -31,7 +32,7 @@
                   alt="Cloudy"
                 />
                 <div>
-                  <strong id="temperature">17</strong
+                  <strong id="temperature"></strong
                   ><span class="units"
                     >°C | <a class="fahrenheit" href="#">°F</a></span
                   >
@@ -40,9 +41,8 @@
             </div>
             <div class="col-md-6">
               <ul class="description-2">
-                <li>Precipitation:0</li>
-                <li>Humidity: 73%</li>
-                <li>Wind: 2km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
           </div>
