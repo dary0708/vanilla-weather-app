@@ -26,6 +26,10 @@ li {
   color: rgb(164, 142, 184);
   text-transform: capitalize;
 }
+
+li:first-letter {
+  text-transform: capitalize;
+}
 .open-source-link {
   text-decoration: none;
 }
