@@ -56,9 +56,10 @@ li:first-letter {
   position: relative;
   font-size: 15px;
 }
-.fahrenheit {
+#fahrenheit-link {
   text-decoration: none;
+  color: #0d6efd;
 }
-.fahrenheit:hover {
+#fahrenheit-link:hover {
   text-decoration: underline;
 }
