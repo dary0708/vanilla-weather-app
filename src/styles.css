@@ -63,3 +63,7 @@ li:first-letter {
 #fahrenheit-link:hover {
   text-decoration: underline;
 }
+
+#celsius-link {
+  text-decoration: none;
+}
